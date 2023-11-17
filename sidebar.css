@@ -41,7 +41,7 @@
   border-bottom: 5px solid black;
   margin: auto;
   padding: 25px;
-  width: 103%;
+  max-width:100%;
   border-width: 100%;
   margin-left: -10px;
   padding-left: 180px;
