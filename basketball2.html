@@ -2,12 +2,15 @@
 <html>
 
 <head>
-  <title>Show Boxes with Text</title>
+  <!-- Changed the Tab title to reflect the page content better -->
+  <title>GOAT Team Creator</title>
   <link rel="stylesheet" href="sidebar.css">
 </head>
 <div class="sidenav">
   <a href="index.html" class="sidenavitems">Home</a>
   <a href="badminton.html" class="sidenavitems">Badminton</a>
+  <!-- Added the basketball page to the nav bar -->
+  <a href="basketball2.html" class="sidenavitems">Basketball</a>
   <a href="football.html" class="sidenavitems">Football</a>
 </div>
    <div class="content">
@@ -47,11 +50,12 @@
   <button id="button15">Hakeem Olajuwon</button>
 
   <br>
-  <div class="box" id="box1"></div>
-  <div class="box" id="box2"></div>
-  <div class="box" id="box3"></div>
-  <div class="box" id="box4"></div>
-  <div class="box" id="box5"></div>
+  <!-- Add some inline style to space out the player names -->
+  <div class="box" id="box1" style="margin-top: 30px;"></div>
+  <div class="box" id="box2" style="margin-top: 30px;"></div>
+  <div class="box" id="box3" style="margin-top: 30px;"></div>
+  <div class="box" id="box4" style="margin-top: 30px;"></div>
+  <div class="box" id="box5" style="margin-top: 30px;"></div>
   
    </div>
   <script>
@@ -80,64 +84,64 @@
     var button15 = document.getElementById("button15");
     var box5 = document.getElementById("box5");
 
-
+    // add a little more to the descriptions to include team names. and championships 
     button1.addEventListener("click", function () {
-      box1.textContent = "Stephen Curry";
+      box1.textContent = "Stephen Curry - Golden State Warriors (4 time NBA champ)";
     });
 
     button2.addEventListener("click", function () {
-      box1.textContent = "Magic Johnson";
+      box1.textContent = "Magic Johnson - Los Angeles Lakers (5 time NBA champ)";
     });
 
     button3.addEventListener("click", function () {
-      box1.textContent = "Oscar Robertson";
+      box1.textContent = "Oscar Robertson - Milwaukee Bucks (1 time NBA champ)";
     });
 
     button4.addEventListener("click", function () {
-      box2.textContent = "Kobe Bryant";
+      box2.textContent = "Kobe Bryant - Los Angeles Lakers (5 time NBA champ)";
     });
 
     button5.addEventListener("click", function () {
-      box2.textContent = "Micheal Jordan";
+      box2.textContent = "Micheal Jordan - Chicago Bulls (6 time NBA champ)";
     });
 
     button6.addEventListener("click", function () {
-      box2.textContent = "James Harden";
+      box2.textContent = "James Harden - Los Angeles Clippers (no NBA championships)";
     });
 
     button7.addEventListener("click", function () {
-      box3.textContent = "Lebron James";
+      box3.textContent = "Lebron James - Los Angeles Lakers (4 time NBA champ)";
     });
 
     button8.addEventListener("click", function () {
-      box3.textContent = "Larry Bird";
+      box3.textContent = "Larry Bird - Boston Celtics (3 time NBA champ)";
     });
 
     button9.addEventListener("click", function () {
-      box3.textContent = "Kevin Durant";
+      box3.textContent = "Kevin Durant - Phoenix Suns (2 time NBA champ)";
     });
 
     button10.addEventListener("click", function () {
-      box4.textContent = "Tim Duncan";
+      box4.textContent = "Tim Duncan - San Antonio Spurs (5 time NBA champ)";
     });
 
     button11.addEventListener("click", function () {
-      box4.textContent = "Dirk Nowitzki";
+      box4.textContent = "Dirk Nowitzki - Dallas Mavericks (1 time NBA champ)";
     });
 
     button12.addEventListener("click", function () {
-      box4.textContent = "Kevin Garnett";
+      box4.textContent = "Kevin Garnett - Boston Celtics (1 time NBA champ)";
     });
 
     button13.addEventListener("click", function () {
-      box5.textContent = "Kareem Abdul-Jabbar";
+      box5.textContent = "Kareem Abdul-Jabbar - Los Angeles Lakers (6 time NBA champ)";
     });
 
     button14.addEventListener("click", function () {
-      box5.textContent = "Shaquille O'Neal";
+      box5.textContent = "Shaquille O'Neal - Los Angeles Lakers (4 time NBA champ)";
     });
     button15.addEventListener("click", function () {
-      box5.textContent = "Hakeem Olajuwon";
+      box5.textContent = "Hakeem Olajuwon - Houston Rockets (2 time NBA champ)";
     });
 
   </script>
