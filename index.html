@@ -8,33 +8,54 @@
 </head>
 
 <body>
-  <h1 class="heading">Welcome to CC1.2 by Project Group 7</h1>
+  <div class = "mainContainer">
+    <h1 class="heading">Welcome to CC1.2 by Project Group 7</h1>
 
-  <!-- Sidebar box-->
-  <div class="sidenav">
-    <a href="index.html" class="sidenavitems">Home</a>
-    <a href="badminton.html" class="sidenavitems">Badminton</a>
-    <a href="basketball2.html" class="sidenavitems">Basketball</a>
-    <a href="football.html" class="sidenavitems">Football</a>
+    <!-- Sidebar box-->
+    <div class="sidenav">
+      <a href="index.html" class="sidenavitems">Home</a>
+      <a href="badminton.html" class="sidenavitems">Badminton</a>
+      <a href="basketball2.html" class="sidenavitems">Basketball</a>
+      <a href="football.html" class="sidenavitems">Football</a>
+    </div>
+  
+    <!-- Content box, class content must be given or will be covered by sidebar(WIP)-->
+    <div class="content">
+      <h2>About this project</h2>
+      <p>
+        This project team consists of:
+      </p>
+      <!-- <ul>
+        <li>CF L - Basketball</li>
+        <li>Luc Milburn - American Football</li>
+        <li>Scott Liu - Badminton</li>
+      </ul> -->
+      <table>
+        <tr>
+          <th>Group Member</th>
+          <th>Webpage</th>
+        </tr>
+        <tr>
+          <td>Scott Liu </td>
+          <td>Badminton</td>
+        </tr>
+        <tr>
+          <td>CF L</td>
+          <td>Basketball</td>
+        </tr>
+        <tr>
+          <td>Luc Milburn</td>
+          <td>American Football</td>
+        </tr>
+      </table> 
+      <!-- </br> -->
+      <p>
+        The goal of this project is to create a brief website where each team member creates a page about one sport of
+        their choosing.
+      </p>
+    </div>
   </div>
-
-  <!-- Content box, class content must be given or will be covered by sidebar(WIP)-->
-  <div class="content">
-    <h2>About this project</h2>
-    <p>
-      This project team consists of:
-    </p>
-    <ul>
-      <li>CF L - Basketball</li>
-      <li>Luc Milburn - American Football</li>
-      <li>Scott Liu - Badminton</li>
-    </ul>
-    </br>
-    <p>
-      The goal of this project is to create a brief website where each team member creates a page about one sport of
-      their choosing.
-    </p>
-  </div>
+ 
   <!-- Function runs on start to remove unnecessary sidebar option when on page-->
   <script src="sidebar.js"></script>
 </body>
