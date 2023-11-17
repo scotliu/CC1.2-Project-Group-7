@@ -10,6 +10,6 @@ playArea.addEventListener("mousemove", function(event) {
   const y = event.clientY;
 
   // Set football's left/right offset to the coords from clientX/clientY
-  football.style.left = x + "px";
+  football.style.left = Math.min(x, window.innerWidth - 110) + "px";
   football.style.right = y + "px";
 });
