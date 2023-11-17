@@ -1,0 +1,95 @@
+<!-- Authored by Scott Liu -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>A brief introduction to Badminton</title>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="badminton.css">
+</head>
+
+<body>
+  <h1 class="heading">A brief introduction to Badminton</h1>
+  <!-- Sidebar box-->
+  <div class="sidenav">
+    <a href="index.html" class="sidenavitems">Home</a>
+    <a href="badminton.html" class="sidenavitems">Badminton</a>
+    <a href="basketball2.html" class="sidenavitems">Basketball</a>
+    <a href="football.html" class="sidenavitems">Football</a>
+  </div>
+  <!-- Content box, class content must be given or will be covered by sidebar(WIP)-->
+  <div class="content">
+    <h2>Origins of Badminton</h2>
+    <p>
+      In a very basic summary, badminton is a court or lawn game played with lightweight rackets and a shuttlecock.
+      </br>
+      The game is named for Badminton, the country estate of the dukes of Beaufort in Gloucestershire, England, where it
+      was first played about 1873. The roots of the sport can be traced to ancient Greece, China, and India, and it is
+      closely related to the old children’s game battledore and shuttlecock. Badminton is derived directly from poona,
+      which was played by British army officers stationed in India in the 1860s.
+    </p>
+    <h2>Some famous players</h2>
+    <div class="arrows">
+      <a href="#" id="previous" class="prev">&#10094; Previous</a>
+      <a href="#" id="next" class="next"> Next &#10095;</a>
+    </div>
+    <div id='slides-container'>
+      <div class="mySlides fade">
+        <div id="numbertext">1 / 4</div>
+        <img src="badmintonimages/lindan.jpeg" alt="Lin Dan" height="200" id="myimage">
+        <b id="playername">Lin Dan</b>
+        <p id="playerinfo">
+          World Champion Lin Dan is a 2-time Olympic champion, 5-time World Champion and 6-time All-England Champion. He
+          is the first and only player to win this feat!
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+    var currentImage = 0;
+    var myPhotos = ['lindan.jpeg', 'leechongwei.jpeg', 'taufikhidayat.jpeg', 'sainanehwal.jpeg'];
+    var myPlayerName = ["Lin Dan", "Lee Chong Wei", "Taufik Hidayat", "Saina Nehwal"];
+    var myPlayerInfo = ["World Champion Lin Dan is a 2-time Olympic champion, 5-time World Champion and 6-time All-England Champion. He is the first and only player to win this feat!",
+      "Lee Chong Wei is the only Malaysian player with a number 1 ranking for more than 1 year.  He has won many titles and championships, including 3 silver medals at the Olympics, 5 BWF Championships and 5 gold medals in the Commonwealth Games.",
+      "Taufik Hidayat is a retired Indonesian badminton player known as the closest rival to the dominating world champion, Lin Dan.  He has won 27 titles in his career, holding the record for performing the fastest smash at a singles competition in badminton history.",
+      "Saina Nehwal is the first Indian badminton player to win a medal at the Olympics and the BWF series. She also won a gold medal in Commonwealth Games, held in 2010."];
+    var slideNumber = ["1", "2", "3", "4"];
+
+    var container = document.getElementById('slides-container');
+
+    var nextBtn = document.getElementById("next");
+    var prevBtn = document.getElementById("previous");
+
+    console.log(container);
+
+    nextBtn.addEventListener('click', function (event) {
+      event.preventDefault();
+      currentImage++;
+      if (currentImage > myPhotos.length - 1) {
+        currentImage = 0;
+      }
+      changeSlide();
+    });
+
+    prevBtn.addEventListener('click', function (event) {
+      event.preventDefault();
+      currentImage--;
+      if (currentImage < 0) {
+        currentImage = myPhotos.length - 1;
+      }
+      changeSlide();
+    });
+
+    function changeSlide() {
+      document.getElementById("numbertext").innerHTML = `${slideNumber[currentImage]} / 4`;
+      document.getElementById('myimage').src = `badmintonimages/${myPhotos[currentImage]}`;
+      document.getElementById('myimage').alt = myPlayerName[currentImage];
+      document.getElementById('playername').innerHTML = myPlayerName[currentImage];
+      document.getElementById('playerinfo').innerHTML = myPlayerInfo[currentImage];
+    }
+  </script>
+  <script src="sidebar.js"></script>
+</body>
+
+</html>

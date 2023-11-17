@@ -1,0 +1,183 @@
+#footballimage1 {
+  height: 200px;
+  border: 5px solid black;
+}
+
+.card_border {
+  position: relative;
+  height: 200px;
+  width: 150px;
+  border: 2px solid black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  min-width: 100px;
+}
+
+#jeff_image {
+  height: 200px;
+  background-color: #b37be8;
+  cursor: pointer;
+}
+
+#saquon_image {
+  height: 200px;
+  background: lightblue;
+  cursor: pointer;
+}
+
+#travis_image {
+  height: 200px;
+  background: lightcoral;
+  cursor: pointer;
+}
+
+#joe_image {
+  height: 200px;
+  background: lightsalmon;
+  cursor: pointer;
+}
+
+#players_span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card_border p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+
+h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.center_h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.center_h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.center_h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+#cartoon_football {
+  position: absolute;
+  height: 50px;
+  top: 25px;
+}
+
+#football_animate {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  background-color: #549164;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+#player1 {
+  left: 0;
+  top: 50px;
+  z-index: 0;
+}
+
+#player2 {
+  position: absolute;
+  width: 180px;
+  top: 7px;
+  right: 0;
+  z-index: 0;
+}
+
+.topnav {
+  background: grey;
+  height: 50px;
+  top: 0px;
+  position: flex;
+  text-align: center;
+}
+
+.topnavitems {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 5px;
+  font-size: large;
+}
+
+body {
+  background-image: url("footballimages/grass.jpg");
+}
+
+.white_bg {
+  margin: 4px;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.white_bg_top {
+  margin: 4px;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#div1 {
+  display: inline-block;
+  width: 49%;
+  margin: 5px;
+  vertical-align: text-top;
+}
+
+#div2 {
+  display: inline-block;
+  width: 48%;
+  margin: 5px;
+  vertical-align: text-top;
+}
+
+#div_container {
+  min-width: 50%;
+  display: flex;
+}
